@@ -19,6 +19,7 @@ return new class() extends Migration {
             $table->text('full_description');
             $table->decimal('price', 7, 2)->default(0);
             $table->integer('quantity')->default(20);
+            $table->string('image_path', 100);
             $table->string('image_name', 100);
             $table->string('category', 20);
             $table->string('classification', 20)->default('default')->comment('default,exclusive,featured,upcoming');
