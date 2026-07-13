@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Traits\PhpFlasher;
+use App\Models\Product;
 
 class HomeController extends Controller
 {
@@ -26,6 +27,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages.default.homepage');
+        $products = Product::withPrices()->take(4)->get();
+        return view('pages.default.homepage', compact('products'));
     }
 }

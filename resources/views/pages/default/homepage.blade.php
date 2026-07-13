@@ -8,7 +8,7 @@
                 <div class="container-fluid p-0">
                     <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end"
                         data-scrollax-parent="true">
-                        <img class="one-third order-md-last img-fluid" src="{{ asset('template_default/images/bg_1.png') }}"
+                        <img class="one-third order-md-last img-fluid" src="{{ asset('template_default/images/cake.png') }}"
                             alt="">
                         <div class="one-forth d-flex align-items-center ftco-animate"
                             data-scrollax=" properties: { translateY: '70%' }">
@@ -107,10 +107,11 @@
         </div>
         <div class="container">
             <div class="row">
+                @foreach ($products as $product)
                 <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
                     <div class="product d-flex flex-column">
-                        <a href="#" class="img-prod"><img class="img-fluid"
-                                src="{{ asset('template_default/images/product-1.png') }}" alt="Colorlib Template">
+                        <a href="{{ route('shop.details', $product->id) }}" class="img-prod"><img class="img-fluid"
+                                src="{{ $product->getImage() }}" alt="Colorlib Template">
                             <span class="status">New Arrival</span>
                             <div class="overlay"></div>
                         </a>
@@ -129,125 +130,21 @@
                                     </p>
                                 </div>
                             </div>
-                            <h3><a href="#">Nike Free RN 2019 iD</a></h3>
+                            <h3><a href="{{ route('shop.details', $product->id) }}">{{ $product->title }}</a></h3>
                             <div class="pricing">
-                                <p class="price"><span>$120.00</span></p>
+                                <p class="price"><span>${{ $product->getPrice() }}</span></p>
                             </div>
                             <p class="bottom-area d-flex px-3">
-                                <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
+                                <a href="{{ route('cart.addfromstorepage', $product->id) }}" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
                                             class="ion-ios-cart ml-1"></i></span></a>
-                                <a href="#" class="buy-now text-center py-2">Details<span><i
+                                <a href="{{ route('shop.details', $product->id) }}"" class="buy-now text-center py-2">Details<span><i
                                             class="ion-ios-information-circle ml-1 ml-1"></i></span></a>
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
-                    <div class="product d-flex flex-column">
-                        <a href="#" class="img-prod"><img class="img-fluid"
-                                src="{{ asset('template_default/images/product-2.png') }}" alt="Colorlib Template">
-                            <span class="status">New Arrival</span>
-                            <div class="overlay"></div>
-                        </a>
-                        <div class="text py-3 pb-4 px-3">
-                            <div class="d-flex">
-                                <div class="cat">
-                                    <span>Lifestyle</span>
-                                </div>
-                                <div class="rating">
-                                    <p class="text-right mb-0">
-                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                    </p>
-                                </div>
-                            </div>
-                            <h3><a href="#">Nike Free RN 2019 iD</a></h3>
-                            <div class="pricing">
-                                <p class="price"><span class="mr-2 price-dc">$120.00</span><span
-                                        class="price-sale">$80.00</span></p>
-                            </div>
-                            <p class="bottom-area d-flex px-3">
-                                <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
-                                            class="ion-ios-add ml-1"></i></span></a>
-                                <a href="#" class="buy-now text-center py-2">Buy now<span><i
-                                            class="ion-ios-cart ml-1"></i></span></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
-                    <div class="product">
-                        <a href="#" class="img-prod"><img class="img-fluid"
-                                src="{{ asset('template_default/images/product-3.png') }}" alt="Colorlib Template">
-                            <span class="status">New Arrival</span>
-                            <div class="overlay"></div>
-                        </a>
-                        <div class="text py-3 pb-4 px-3">
-                            <div class="d-flex">
-                                <div class="cat">
-                                    <span>Lifestyle</span>
-                                </div>
-                                <div class="rating">
-                                    <p class="text-right mb-0">
-                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                    </p>
-                                </div>
-                            </div>
-                            <h3><a href="#">Nike Free RN 2019 iD</a></h3>
-                            <div class="pricing">
-                                <p class="price"><span>$120.00</span></p>
-                            </div>
-                            <p class="bottom-area d-flex px-3">
-                                <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
-                                            class="ion-ios-add ml-1"></i></span></a>
-                                <a href="#" class="buy-now text-center py-2">Buy now<span><i
-                                            class="ion-ios-cart ml-1"></i></span></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
-                    <div class="product">
-                        <a href="#" class="img-prod"><img class="img-fluid"
-                                src="{{ asset('template_default/images/product-4.png') }}" alt="Colorlib Template">
-                            <span class="status">New Arrival</span>
-                            <div class="overlay"></div>
-                        </a>
-                        <div class="text py-3 pb-4 px-3">
-                            <div class="d-flex">
-                                <div class="cat">
-                                    <span>Lifestyle</span>
-                                </div>
-                                <div class="rating">
-                                    <p class="text-right mb-0">
-                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
-                                    </p>
-                                </div>
-                            </div>
-                            <h3><a href="#">Nike Free RN 2019 iD</a></h3>
-                            <div class="pricing">
-                                <p class="price"><span>$120.00</span></p>
-                            </div>
-                            <p class="bottom-area d-flex px-3">
-                                <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
-                                            class="ion-ios-add ml-1"></i></span></a>
-                                <a href="#" class="buy-now text-center py-2">Buy now<span><i
-                                            class="ion-ios-cart ml-1"></i></span></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+
 
             </div>
         </div>
