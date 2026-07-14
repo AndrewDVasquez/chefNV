@@ -13991,3 +13991,29 @@ textarea.form-control {
     color: #D35400;
     text-decoration: none  ;
 }
+
+
+.card{
+    border:none;
+    border-radius:16px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.card-img-top{
+    height:240px;
+    object-fit:cover;
+}
+
+.card h4{
+    font-weight:700;
+}
+
+.card-footer{
+    padding:1rem;
+}

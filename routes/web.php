@@ -9,6 +9,8 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\CheckoutPaymentController;
 use App\Http\Controllers\CheckoutSuccessController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\AdminPostController;
+
 
 
 
@@ -23,6 +25,25 @@ Route::get('/shop', [ProductController::class, 'index'])->name('shop.index');
 
 Route::get('/details/{id}', [DetailController::class, 'index'])->name('store.details');
 Route::get('/details/{id}', [DetailController::class, 'index'])->name('shop.details');
+
+// Blog routes
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+Route::get('/blog/{post:slug}', [BlogController::class, 'show'])->name('blog.show');
+
+// Route::middleware(['auth', 'admin'])
+//     ->prefix('admin')
+//     ->name('admin.')
+//     ->group(function () {
+
+//         Route::resource('posts', AdminPostController::class);
+
+//     });
+
+
+
+
+
+
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
@@ -43,8 +64,7 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/checkout/success/{id}', [CheckoutSuccessController::class, 'index'])->name('checkout.success');
 
-    Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
-    Route::get('/blog/{post}', [BlogController::class, 'show']);
+
 });
 
 

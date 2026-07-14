@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Post;
 
 class BlogController extends Controller
 {
@@ -11,7 +12,10 @@ class BlogController extends Controller
      */
     public function index()
     {
-        return view('pages.default.blog.index');
+        $posts = Post::whereNotNull('created_at')
+        ->latest('created_at')
+        ->paginate(6);
+        return view('pages.default.blog.index', compact('posts'));
     }
 
     /**
@@ -33,9 +37,9 @@ class BlogController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Post $post)
     {
-        //
+        return view('pages.default.blog.show', compact('post'));
     }
 
     /**
