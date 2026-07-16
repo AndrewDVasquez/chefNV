@@ -76,7 +76,7 @@
                     @auth
                     <li class="nav-item"><a href="{{ route('filament.admin.pages.dashboard') }}" class="nav-link">Dashboard</a></li>
                     @endauth
-                    <li class="nav-item"><a href="{{ route('store.index') }}" class="nav-link">Store</a></li>
+                    <li class="nav-item"><a href="{{ route('store.index') }}" class="nav-link">Menu</a></li>
 
                     @auth
                         <li class="nav-item dropdown active">
