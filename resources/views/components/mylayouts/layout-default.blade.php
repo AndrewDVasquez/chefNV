@@ -60,7 +60,10 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand store-logo" href="{{ route('home.index') }}">{{ $store }}</a>
+            <a class="navbar-brand store-logo" href="{{ route('home.index') }}">
+                <img src="{{ asset('template_default/images/logo1.png') }}" alt="Chef NV Logo">
+                <span>{{ $store }}</span>
+            </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -120,7 +123,7 @@
     @isset($hideBanner)
         @empty($hideBanner)
             {{-- START hero --}}
-            <div class="hero-wrap hero-bread" style="background-image: url('{{ asset('template_default/images/bg_6.jpg') }}');">
+            <div class="hero-wrap hero-bread page-banner" style="background-image: url('{{ asset('template_default/images/cookies2.jpg') }}');">
                 <div class="container">
                     <div class="row no-gutters slider-text align-items-center justify-content-center">
                         <div class="col-md-9 ftco-animate text-center">
