@@ -14,7 +14,7 @@ class LayoutDefault extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct($store = null, $title = 'Store', $hideBanner = false)
+    public function __construct($store = null, $title = 'Menu', $hideBanner = false)
     {
         $this->store = $store ?? config('app.store_name', 'Chef NV');
         $this->title = $title;

@@ -40,6 +40,7 @@ class BlogController extends Controller
     public function show(Post $post)
     {
         return view('pages.default.blog.show', compact('post'));
+
     }
 
     /**

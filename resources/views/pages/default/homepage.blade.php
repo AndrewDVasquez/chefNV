@@ -8,21 +8,21 @@
                 <div class="container-fluid p-0">
                     <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end"
                         data-scrollax-parent="true">
-                        <img class="one-third order-md-last img-fluid" src="{{ asset('template_default/images/cake.png') }}"
+                        <img class="one-third order-md-last img-fluid" src="{{ asset('template_default/images/strawberry_cake.jpg') }}"
                             alt="">
-                        <div class="one-forth d-flex align-items-center ftco-animate"
+                        {{-- <div class="one-forth d-flex align-items-center ftco-animate"
                             data-scrollax=" properties: { translateY: '70%' }">
                             <div class="text">
-                                <span class="subheading">#Best Sellers</span>
+
                                 <div class="horizontal">
                                     <h1 class="mb-4 mt-3">Best Sellers {{ date('Y') }}</h1>
                                     <p class="mb-4">A small river named Duden flows by their place and supplies it with the
                                         necessary regelialia. It is a paradisematic country.</p>
 
-                                    <p><a href="#" class="btn-custom">Discover Now</a></p>
+                                    <p><a href="#" class="btn-custom">About Me</a></p>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -32,26 +32,50 @@
                 <div class="container-fluid p-0">
                     <div class="row d-flex no-gutters slider-text align-items-center justify-content-end"
                         data-scrollax-parent="true">
-                        <img class="one-third order-md-last img-fluid" src="{{ asset('template_default/images/bg_2.png') }}"
+                        <img class="one-third order-md-last img-fluid" src="{{ asset('template_default/images/assorted_platter.jpg') }}"
                             alt="">
-                        <div class="one-forth d-flex align-items-center ftco-animate"
+                        {{-- <div class="one-forth d-flex align-items-center ftco-animate"
                             data-scrollax=" properties: { translateY: '70%' }">
                             <div class="text">
-                                <span class="subheading">#New Arrival</span>
+
                                 <div class="horizontal">
                                     <h1 class="mb-4 mt-3">New Collection {{ date('Y') }}</h1>
                                     <p class="mb-4">A small river named Duden flows by their place and supplies it with the
                                         necessary regelialia. It is a paradisematic country.</p>
 
-                                    <p><a href="#" class="btn-custom">Discover Now</a></p>
+                                    <p><a href="#" class="btn-custom">About Me</a></p>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
+
                 </div>
             </div>
+
+            <div class="slider-item js-fullheight">
+                <div class="overlay"></div>
+                <div class="container-fluid p-0"></div>
+                    <div class="row d-flex no-gutters slider-text align-items-center justify-content-end"
+                        data-scrollax-parent="true">
+                        <img class="one-third order-md-last img-fluid" src="{{ asset('template_default/images/home1.jpg') }}"
+                            alt="">
         </div>
-    </section>
+
+
+
+        </div>
+
+        <div class="slider-item js-fullheight">
+                <div class="overlay"></div>
+                <div class="container-fluid p-0"></div>
+                    <div class="row d-flex no-gutters slider-text align-items-center justify-content-end"
+                        data-scrollax-parent="true">
+                        <img class="one-third order-md-last img-fluid" src="{{ asset('template_default/images/home_cookies.jpg') }}"
+                            alt="">
+
+
+
+    </section
 
     <section class="ftco-section ftco-no-pt ftco-no-pb">
         <div class="container">
@@ -151,7 +175,7 @@
     </section>
 
     <section class="ftco-section ftco-counter img" id="section-counter"
-        style="background-image: url('{{ asset('template_default/images/bg_6.jpg') }}');">
+        style="background-image: url('{{ asset('template_default/images/tarts.jpg') }}');">
         <div class="container">
             <div class="row justify-content-center py-5">
                 <div class="col-md-10">
@@ -198,7 +222,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
-                    style="background-image: url({{ asset('template_default/images/about.jpg') }});">
+                    style="background-image: url({{ asset('template_default/images/NatV.jpg') }});">
                     <a href="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1" target="_blank"
                         class="icon popup-vimeo d-flex justify-content-center align-items-center">
                         <span class="icon-play"></span>
@@ -207,7 +231,7 @@
                 <div class="col-md-7 py-md-5 wrap-about pb-md-5 ftco-animate fadeInUp ftco-animated">
                     <div class="heading-section-bold mb-4 mt-md-5">
                         <div class="ml-md-0">
-                            <h2 class="mb-4">Established Since 1975</h2>
+                            <h2 class="mb-4">Established Since 2020</h2>
                         </div>
                     </div>
                     <div class="pb-md-5 pb-4">
@@ -216,7 +240,7 @@
                             they abused her for their.</p>
                         <p>But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy
                             Writers ambushed her.</p>
-                        <p><a href="#" class="btn btn-primary">Shop now</a></p>
+                        <p><a href="#" class="btn btn-primary">About Me</a></p>
                     </div>
                 </div>
             </div>

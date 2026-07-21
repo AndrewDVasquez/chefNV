@@ -1,7 +1,11 @@
-<x-mylayouts.layout-default title="Blog">
+<x-mylayouts.layout-default title="Blog"
+bannerImage="template_default/images/banner.jpg">
+
+
 
 <div class="container py-5">
     <div class="row">
+
 
         @foreach ($posts as $post)
 

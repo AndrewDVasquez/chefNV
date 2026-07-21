@@ -98,6 +98,7 @@
                         </li>
                     @endauth
                     <li class="nav-item"><a href={{ route('blog.index') }} class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
 
 
@@ -123,14 +124,12 @@
     @isset($hideBanner)
         @empty($hideBanner)
             {{-- START hero --}}
-            <div class="hero-wrap hero-bread page-banner" style="background-image: url('{{ asset('template_default/images/cookies2.jpg') }}');">
+            <div class="hero-wrap hero-bread page-banner"
+     style="background-image: url('{{ asset($attributes->get('bannerImage', 'template_default/images/cookies2.jpg')) }}');">
                 <div class="container">
-                    <div class="row no-gutters slider-text align-items-center justify-content-center">
+                    <div class="row no-gutters slider-text align-items-center ju3stify-content-center">
                         <div class="col-md-9 ftco-animate text-center">
-                            <p class="breadcrumbs"><span class="mr-2">
-                                    <a href="{{ route('home.index') }}">Home</a></span>
-                                {{-- <span>Store</span> --}}
-                            </p>
+
                             <h1 class="mb-0 bread">{{ $title }}</h1>
                         </div>
                     </div>
@@ -155,6 +154,8 @@
         </div>
         {{-- END hero --}}
     @endisset
+
+
 
 
 
@@ -187,7 +188,7 @@
                     <div class="ftco-footer-widget mb-4 ml-md-5">
                         <h2 class="ftco-heading-2">Menu</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="py-2 d-block">Store</a></li>
+                            <li><a href={{ route('store.index') }}}" class="py-2 d-block">Store</a></li>
                             <li><a href="#" class="py-2 d-block">About</a></li>
                             <li><a href="#" class="py-2 d-block">Journal</a></li>
                             <li><a href="#" class="py-2 d-block">Contact Us</a></li>

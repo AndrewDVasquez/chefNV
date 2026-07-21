@@ -584,6 +584,7 @@ pre code {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    font-weight: 100px;
 }
 @media (min-width: 576px) {
     .container {
@@ -1179,6 +1180,7 @@ pre code {
         -ms-flex: 0 0 25%;
         flex: 0 0 25%;
         max-width: 25%;
+
     }
     .col-md-4 {
         -webkit-box-flex: 0;
@@ -10757,7 +10759,7 @@ h5,
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     padding-left: 25px;
-    padding-right: 20px;
+    padding-right: 8px;
     font-weight: 1000;
     color: #44271A;
     text-transform: uppercase;
@@ -11001,6 +11003,7 @@ h5,
     margin-bottom: 0;
     z-index: 99;
     font-weight: 300;
+    margin-right: -90px;
 }
 .hero-wrap .slider-text .breadcrumbs span {
     color: black;
@@ -11011,10 +11014,14 @@ h5,
 .hero-wrap .slider-text .bread {
     font-weight: 800;
     color: #000000;
-    font-size: 30px;
+    font-size: 50px;
     font-family: "Open Sans", Arial, sans-serif;
     letter-spacing: 3px;
     text-transform: uppercase;
+    margin-right: -260px;
+    padding-top: 50px;
+
+
 }
 .hero-wrap .slider-text .btn-primary {
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -11029,7 +11036,7 @@ h5,
     color: #000000;
 }
 .hero-wrap.hero-bread {
-    padding: 12em 0;
+    padding: 20em 0;
 }
 
 .mouse {
@@ -11159,15 +11166,15 @@ h5,
 }
 .owl-carousel.home-slider {
     position: relative;
-    height: 750px;
+    height: 700px;
     z-index: 0;
-    background: var(--primary-accent-color);
+    
 }
 .owl-carousel.home-slider .slider-item {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 750px;
+    height: 700px;
     position: relative;
     z-index: 0;
 }
@@ -11186,7 +11193,7 @@ h5,
     z-index: -1;
 }
 .owl-carousel.home-slider .slider-item .slider-text {
-    height: 750px;
+    height: 950px;
     z-index: 0;
 }
 @media (max-width: 991.98px) {
@@ -11195,7 +11202,8 @@ h5,
     }
 }
 .owl-carousel.home-slider .slider-item .slider-text .one-third {
-    width: 65%;
+    width: 100%;
+    height: 100%px;
     position: relative;
     z-index: -1;
     background-position: center center;
@@ -12846,6 +12854,7 @@ textarea.form-control {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
 }
 
 .ftco-services .services {
@@ -13188,16 +13197,17 @@ textarea.form-control {
     padding: 5em 0;
 }
 .ftco-counter .text strong.number {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 30px;
     color: #000000;
 }
 .ftco-counter .text span {
     display: block;
     font-size: 12px;
-    color: rgba(0, 0, 0, 0.7);
+    color: black;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-weight: 800;
 }
 @media (max-width: 767.98px) {
     .ftco-counter .counter-wrap {
@@ -13885,7 +13895,7 @@ textarea.form-control {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 10%;
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
