@@ -10,6 +10,9 @@ use App\Http\Controllers\CheckoutPaymentController;
 use App\Http\Controllers\CheckoutSuccessController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\AdminPostController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ContactController;
+
 
 
 
@@ -29,6 +32,12 @@ Route::get('/details/{id}', [DetailController::class, 'index'])->name('shop.deta
 // Blog routes
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{post:slug}', [BlogController::class, 'show'])->name('blog.show');
+
+// About page route
+Route::get('/about', [AboutController::class, 'index'])->name('about');
+
+// Contact page route
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 
 // Route::middleware(['auth', 'admin'])
 //     ->prefix('admin')

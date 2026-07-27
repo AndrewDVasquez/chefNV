@@ -2,123 +2,131 @@
 
 
     <section id="home-section" class="hero">
-        <div class="home-slider owl-carousel">
-            <div class="slider-item js-fullheight">
-                <div class="overlay"></div>
-                <div class="container-fluid p-0">
-                    <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end"
-                        data-scrollax-parent="true">
-                        <img class="one-third order-md-last img-fluid" src="{{ asset('template_default/images/strawberry_cake.jpg') }}"
-                            alt="">
-                        {{-- <div class="one-forth d-flex align-items-center ftco-animate"
-                            data-scrollax=" properties: { translateY: '70%' }">
-                            <div class="text">
+    <div class="home-slider owl-carousel">
 
-                                <div class="horizontal">
-                                    <h1 class="mb-4 mt-3">Best Sellers {{ date('Y') }}</h1>
-                                    <p class="mb-4">A small river named Duden flows by their place and supplies it with the
-                                        necessary regelialia. It is a paradisematic country.</p>
-
-                                    <p><a href="#" class="btn-custom">About Me</a></p>
-                                </div>
-                            </div>
-                        </div> --}}
-                    </div>
-                </div>
-            </div>
-
-            <div class="slider-item js-fullheight">
-                <div class="overlay"></div>
-                <div class="container-fluid p-0">
-                    <div class="row d-flex no-gutters slider-text align-items-center justify-content-end"
-                        data-scrollax-parent="true">
-                        <img class="one-third order-md-last img-fluid" src="{{ asset('template_default/images/assorted_platter.jpg') }}"
-                            alt="">
-                        {{-- <div class="one-forth d-flex align-items-center ftco-animate"
-                            data-scrollax=" properties: { translateY: '70%' }">
-                            <div class="text">
-
-                                <div class="horizontal">
-                                    <h1 class="mb-4 mt-3">New Collection {{ date('Y') }}</h1>
-                                    <p class="mb-4">A small river named Duden flows by their place and supplies it with the
-                                        necessary regelialia. It is a paradisematic country.</p>
-
-                                    <p><a href="#" class="btn-custom">About Me</a></p>
-                                </div>
-                            </div>
-                        </div> --}}
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="slider-item js-fullheight">
-                <div class="overlay"></div>
-                <div class="container-fluid p-0"></div>
-                    <div class="row d-flex no-gutters slider-text align-items-center justify-content-end"
-                        data-scrollax-parent="true">
-                        <img class="one-third order-md-last img-fluid" src="{{ asset('template_default/images/home1.jpg') }}"
-                            alt="">
-        </div>
-
-
-
-        </div>
-
+        <!-- Slide 1 -->
         <div class="slider-item js-fullheight">
-                <div class="overlay"></div>
-                <div class="container-fluid p-0"></div>
-                    <div class="row d-flex no-gutters slider-text align-items-center justify-content-end"
-                        data-scrollax-parent="true">
-                        <img class="one-third order-md-last img-fluid" src="{{ asset('template_default/images/home_cookies.jpg') }}"
-                            alt="">
+            <div class="overlay"></div>
 
+            <div class="container-fluid p-0">
+                <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end"
+                    data-scrollax-parent="true">
 
+                    <img class="one-third order-md-last img-fluid"
+                        src="{{ asset('template_default/images/strawberry_cake.jpg') }}"
+                        alt="">
 
-    </section
-
-    <section class="ftco-section ftco-no-pt ftco-no-pb">
-        <div class="container">
-            <div class="row no-gutters ftco-services">
-                <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services p-4 py-md-5">
-                        <div class="icon d-flex justify-content-center align-items-center mb-4">
-                            <span class="flaticon-bag"></span>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="heading">Affordable Shipping</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                                the blind texts.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services p-4 py-md-5">
-                        <div class="icon d-flex justify-content-center align-items-center mb-4">
-                            <span class="flaticon-customer-service"></span>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="heading">Support Customer</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                                the blind texts.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services p-4 py-md-5">
-                        <div class="icon d-flex justify-content-center align-items-center mb-4">
-                            <span class="flaticon-payment-security"></span>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="heading">Secure Payments</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                                the blind texts.</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- Slide 2 -->
+        <div class="slider-item js-fullheight">
+            <div class="overlay"></div>
+
+            <div class="container-fluid p-0">
+                <div class="row d-flex no-gutters slider-text align-items-center justify-content-end"
+                    data-scrollax-parent="true">
+
+                    <img class="one-third order-md-last img-fluid"
+                        src="{{ asset('template_default/images/assorted_platter.jpg') }}"
+                        alt="">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slider-item js-fullheight">
+            <div class="overlay"></div>
+
+            <div class="container-fluid p-0">
+                <div class="row d-flex no-gutters slider-text align-items-center justify-content-end"
+                    data-scrollax-parent="true">
+
+                    <img class="one-third order-md-last img-fluid"
+                        src="{{ asset('template_default/images/home1.jpg') }}"
+                        alt="">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slider-item js-fullheight">
+            <div class="overlay"></div>
+
+            <div class="container-fluid p-0">
+                <div class="row d-flex no-gutters slider-text align-items-center justify-content-end"
+                    data-scrollax-parent="true">
+
+                    <img class="one-third order-md-last img-fluid"
+                        src="{{ asset('template_default/images/home_cookies.jpg') }}"
+                        alt="">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Services -->
+<section class="ftco-section ftco-no-pt ftco-no-pb">
+    <div class="container">
+        <div class="row no-gutters ftco-services">
+
+            <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services p-4 py-md-5">
+                    <div class="icon d-flex justify-content-center align-items-center mb-4">
+                        <span class="flaticon-bag"></span>
+                    </div>
+
+                    <div class="media-body">
+                        <h3 class="heading">Affordable Shipping</h3>
+                        <p>
+                            Far far away, behind the word mountains, far from the countries
+                            Vokalia and Consonantia, there live the blind texts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services p-4 py-md-5">
+                    <div class="icon d-flex justify-content-center align-items-center mb-4">
+                        <span class="flaticon-customer-service"></span>
+                    </div>
+
+                    <div class="media-body">
+                        <h3 class="heading">Support Customer</h3>
+                        <p>
+                            Far far away, behind the word mountains, far from the countries
+                            Vokalia and Consonantia, there live the blind texts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services p-4 py-md-5">
+                    <div class="icon d-flex justify-content-center align-items-center mb-4">
+                        <span class="flaticon-payment-security"></span>
+                    </div>
+
+                    <div class="media-body">
+                        <h3 class="heading">Secure Payments</h3>
+                        <p>
+                            Far far away, behind the word mountains, far from the countries
+                            Vokalia and Consonantia, there live the blind texts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
     <section class="ftco-section bg-light">
         <div class="container">
@@ -159,10 +167,11 @@
                                 <p class="price"><span>${{ $product->getPrice() }}</span></p>
                             </div>
                             <p class="bottom-area d-flex px-3">
-                                <a href="{{ route('cart.addfromstorepage', $product->id) }}" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
+                                <a href="{{ route('cart.addfromstorepage', $product->id) }}"
+                                    class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
                                             class="ion-ios-cart ml-1"></i></span></a>
-                                <a href="{{ route('shop.details', $product->id) }}"" class="buy-now text-center py-2">Details<span><i
-                                            class="ion-ios-information-circle ml-1 ml-1"></i></span></a>
+                                <a href="{{ route('shop.details', $product->id) }}"" class=" buy-now text-center
+                                    py-2">Details<span><i class="ion-ios-information-circle ml-1 ml-1"></i></span></a>
                             </p>
                         </div>
                     </div>
@@ -235,10 +244,13 @@
                         </div>
                     </div>
                     <div class="pb-md-5 pb-4">
-                        <p>But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy
-                            Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where
+                        <p>But nothing the copy said could convince her and so it didn’t take long until a few insidious
+                            Copy
+                            Writers ambushed her, made her drunk with Longe and Parole and dragged her into their
+                            agency, where
                             they abused her for their.</p>
-                        <p>But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy
+                        <p>But nothing the copy said could convince her and so it didn’t take long until a few insidious
+                            Copy
                             Writers ambushed her.</p>
                         <p><a href="#" class="btn btn-primary">About Me</a></p>
                     </div>
@@ -293,7 +305,8 @@
                 <div class="col-lg-7">
                     <div class="heading-section ftco-animate mb-5">
                         <h2 class="mb-4">Our satisfied customer says</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the
                             blind texts. Separated they live in</p>
                     </div>
                     <div class="carousel-testimony owl-carousel">
@@ -306,7 +319,8 @@
                                     </span>
                                 </div>
                                 <div class="text">
-                                    <p class="mb-4 pl-4 line">Far far away, behind the word mountains, far from the countries
+                                    <p class="mb-4 pl-4 line">Far far away, behind the word mountains, far from the
+                                        countries
                                         Vokalia and Consonantia, there live the blind texts.</p>
                                     <p class="name">Garreth Smith</p>
                                     <span class="position">Marketing Manager</span>
@@ -322,7 +336,8 @@
                                     </span>
                                 </div>
                                 <div class="text">
-                                    <p class="mb-4 pl-4 line">Far far away, behind the word mountains, far from the countries
+                                    <p class="mb-4 pl-4 line">Far far away, behind the word mountains, far from the
+                                        countries
                                         Vokalia and Consonantia, there live the blind texts.</p>
                                     <p class="name">Garreth Smith</p>
                                     <span class="position">Interface Designer</span>
@@ -338,7 +353,8 @@
                                     </span>
                                 </div>
                                 <div class="text">
-                                    <p class="mb-4 pl-4 line">Far far away, behind the word mountains, far from the countries
+                                    <p class="mb-4 pl-4 line">Far far away, behind the word mountains, far from the
+                                        countries
                                         Vokalia and Consonantia, there live the blind texts.</p>
                                     <p class="name">Garreth Smith</p>
                                     <span class="position">UI Designer</span>
@@ -354,7 +370,8 @@
                                     </span>
                                 </div>
                                 <div class="text">
-                                    <p class="mb-4 pl-4 line">Far far away, behind the word mountains, far from the countries
+                                    <p class="mb-4 pl-4 line">Far far away, behind the word mountains, far from the
+                                        countries
                                         Vokalia and Consonantia, there live the blind texts.</p>
                                     <p class="name">Garreth Smith</p>
                                     <span class="position">Web Developer</span>
@@ -370,7 +387,8 @@
                                     </span>
                                 </div>
                                 <div class="text">
-                                    <p class="mb-4 pl-4 line">Far far away, behind the word mountains, far from the countries
+                                    <p class="mb-4 pl-4 line">Far far away, behind the word mountains, far from the
+                                        countries
                                         Vokalia and Consonantia, there live the blind texts.</p>
                                     <p class="name">Garreth Smith</p>
                                     <span class="position">System Analyst</span>

@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="{{ asset('template_default/css/icomoon.css') }}">
     <link rel="stylesheet" href="{{ asset('template_default/css/style.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     {{-- Custom Accent Colors --}}
     <link rel="stylesheet" href="{{ asset('template_default/css/custom.css') }}">
@@ -83,7 +84,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="dropdown04" aria-haspopup="true"
                                 aria-expanded="false">Profile</a>
                             <div class="dropdown-menu" aria-labelledby="dropdown04">
-                                <a class="dropdown-item" href="{{ route('store.index') }}">Store</a>
+                                <a class="dropdown-item" href="{{ route('store.index') }}">Menu</a>
                                 <a class="dropdown-item" href="{{ route('cart.index') }}">Cart</a>
                                 <a class="dropdown-item" href="#">Order History</a>
 
@@ -97,9 +98,9 @@
                             </div>
                         </li>
                     @endauth
-                    <li class="nav-item"><a href={{ route('blog.index') }} class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="{{ route('blog.index') }}" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
 
 
                     @guest
@@ -178,8 +179,6 @@
                         <h2 class="ftco-heading-2">{{ $store }}</h2>
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
                             <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
                         </ul>
                     </div>
@@ -188,10 +187,9 @@
                     <div class="ftco-footer-widget mb-4 ml-md-5">
                         <h2 class="ftco-heading-2">Menu</h2>
                         <ul class="list-unstyled">
-                            <li><a href={{ route('store.index') }}}" class="py-2 d-block">Store</a></li>
-                            <li><a href="#" class="py-2 d-block">About</a></li>
-                            <li><a href="#" class="py-2 d-block">Journal</a></li>
-                            <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+                            <li><a href="{{ route('store.index') }}" class="py-2 d-block">Menu</a></li>
+                            <li><a href="{{ route('about') }}" class="py-2 d-block">About</a></li>
+                            <li><a href="{{ route('contact') }}" class="py-2 d-block">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -205,7 +203,7 @@
                             </ul>
                             <ul class="list-unstyled">
                                 <li><a href="#" class="py-2 d-block">FAQs</a></li>
-                                <li><a href="#" class="py-2 d-block">Contact</a></li>
+                                <li><a href="{{ route('contact') }}" class="py-2 d-block">Contact</a></li>
                             </ul>
                         </div>
                     </div>
