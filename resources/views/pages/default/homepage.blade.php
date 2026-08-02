@@ -421,6 +421,14 @@
                 </div>
             </div>
         </div>
+
+        <div>
+    <a href="https://wa.me/18687680451?text=Hi%20Chef%20NV,%20I'd%20like%20to%20place%20an%20order."
+   class="whatsapp-float"
+   target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+</div>
     </section>
 
 

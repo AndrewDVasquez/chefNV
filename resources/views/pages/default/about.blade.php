@@ -1,5 +1,5 @@
-<x-mylayouts.layout-default title="About Me"
-bannerImage="template_default/images/banner.jpg">
+<x-mylayouts.layout-default title=""
+hideBanner="true">
 
 <!-- Hero -->
 <section class="about-hero">
@@ -16,7 +16,7 @@ bannerImage="template_default/images/banner.jpg">
         <div class="row align-items-center">
 
             <div class="col-lg-6 mb-5 mb-lg-0">
-                <img src="{{ asset('template_default/images/chef.jpg') }}"
+                <img src="{{ asset('template_default/images/NatV.jpg') }}"
                      class="img-fluid rounded shadow"
                      alt="Chef NV">
             </div>
@@ -198,6 +198,8 @@ Contact Us
 </a>
 
 </div>
+
+
 
 </section>
 

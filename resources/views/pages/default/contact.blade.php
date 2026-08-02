@@ -1,5 +1,5 @@
-<x-mylayouts.layout-default title="Contact"
-bannerImage="template_default/images/banner.jpg">
+<x-mylayouts.layout-default title=""
+hideBanner="true">
 
 <!-- Hero -->
 <section class="contact-hero">
@@ -40,6 +40,14 @@ Feel free to contact us using any of the methods below.
 </div>
 </div>
 
+<div class="whatsapp-link">
+<i class="fab fa-whatsapp text-success"></i>
+<a href="https://wa.me/{{ config('app.whatsapp_number') }}?text=Hi%20Chef%20NV,%20I'd%20like%20to%20place%20an%20order."
+   target="_blank"><h5>WhatsApp</h5></a>
+
+        </a>
+</div>
+
 <div class="info-item">
 <i class="fas fa-envelope"></i>
 <div>
@@ -63,6 +71,8 @@ Feel free to contact us using any of the methods below.
 <p>Mon – Sat<br>9:00 AM – 5:00 PM</p>
 </div>
 </div>
+
+
 
 </div>
 
@@ -153,6 +163,16 @@ loading="lazy">
 
 </div>
 
+<div>
+    <a href="https://wa.me/18687680451?text=Hi%20Chef%20NV,%20I'd%20like%20to%20place%20an%20order."
+   class="whatsapp-float"
+   target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+</div>
+
 </section>
+
+
 
 </x-mylayouts.layout-default>

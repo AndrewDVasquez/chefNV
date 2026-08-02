@@ -128,8 +128,9 @@
             <div class="hero-wrap hero-bread page-banner"
      style="background-image: url('{{ asset($attributes->get('bannerImage', 'template_default/images/cookies2.jpg')) }}');">
                 <div class="container">
-                    <div class="row no-gutters slider-text align-items-center ju3stify-content-center">
+                    <div class="row no-gutters slider-text align-items-center justify-content-center">
                         <div class="col-md-9 ftco-animate text-center">
+
 
                             <h1 class="mb-0 bread">{{ $title }}</h1>
                         </div>
@@ -155,6 +156,14 @@
         </div>
         {{-- END hero --}}
     @endisset
+
+    <div>
+    <a href="https://wa.me/18687680451?text=Hi%20Chef%20NV,%20I'd%20like%20to%20place%20an%20order."
+   class="whatsapp-float"
+   target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+</div>
 
 
 
