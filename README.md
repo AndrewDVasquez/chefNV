@@ -1,59 +1,202 @@
-<p align="center"><img width="294" height="69" src="/public/template_default/images/sail-logo.svg" alt="Logo Laravel Sail"></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# 🍽️ Chef NV Website
 
-## About Laravel
+**A modern e-commerce website built with Laravel for a home-based food business.**
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Designed to simplify online ordering, showcase products, and streamline business operations.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<img src="https://github.com/user-attachments/assets/20a8daf1-0758-4882-a3ee-a3e324ca8532" width="350">
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<br>
 
-## Learning Laravel
+![Laravel](https://img.shields.io/badge/Laravel-12-red?style=for-the-badge&logo=laravel)
+![PHP](https://img.shields.io/badge/PHP-8.4-777BB4?style=for-the-badge&logo=php)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=for-the-badge&logo=bootstrap)
+![Docker](https://img.shields.io/badge/Docker-Laravel%20Sail-2496ED?style=for-the-badge&logo=docker)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+</div>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+#  About
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Chef NV Website is a full-stack e-commerce application built using **Laravel 12**.
 
-### Premium Partners
+As a former chef, I created this project to support my wife's home-based food business by providing customers with an easy way to browse products, place orders, and stay updated with new offerings.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+The goal was to build a clean, responsive platform while applying modern Laravel development practices.
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+#  Features
 
-## Code of Conduct
+## Customer
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- Browse food products
+- Search products
+- Browse by category
+- Shopping cart
+- Secure checkout
+- Contact form
+- Blog
+- Responsive design
 
-## Security Vulnerabilities
+## Admin
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- Dashboard
+- Product Management (CRUD)
+- Category Management (CRUD)
+- Order Management
+- Blog Management
+- Image Uploads
+
+---
+
+# 🛠 Tech Stack
+
+| Category | Technologies |
+|-----------|--------------|
+| Backend | Laravel 12, PHP 8.4 |
+| Frontend | Blade, Bootstrap 5, JavaScript, Vite |
+| Database | MySQL |
+| Development | Docker, Laravel Sail, Composer, NPM |
+| Version Control | Git & GitHub |
+| Editor | VS Code |
+
+---
+
+#  Project Structure
+
+```
+app/
+bootstrap/
+config/
+database/
+public/
+resources/
+routes/
+storage/
+tests/
+```
+
+---
+
+#  Getting Started
+
+## Clone the repository
+
+```bash
+git clone https://github.com/yourusername/chefnv-website.git
+
+cd chefnv-website
+```
+
+## Install dependencies
+
+```bash
+composer install
+
+npm install
+```
+
+## Configure environment
+
+```bash
+cp .env.example .env
+
+php artisan key:generate
+```
+
+Update your database credentials inside `.env`.
+
+---
+
+## Start Laravel Sail
+
+```bash
+./vendor/bin/sail up -d
+```
+
+---
+
+## Run migrations
+
+```bash
+./vendor/bin/sail artisan migrate
+```
+
+---
+
+## Build frontend assets
+
+```bash
+npm run dev
+```
+
+---
+
+Visit:
+
+```
+http://localhost
+```
+
+---
+
+# 📸 Screenshots
+
+| Home Page |
+|-----------|
+| <img src="https://github.com/user-attachments/assets/20a8daf1-0758-4882-a3ee-a3e324ca8532" width="500"> |
+
+*(More screenshots coming soon.)*
+
+---
+
+# 🎯 Learning Objectives
+
+This project allowed me to gain practical experience with:
+
+- Laravel MVC Architecture
+- E-commerce functionality
+- CRUD operations
+- Authentication & Authorization
+- Database relationships
+- Image uploads
+- Form validation
+- Responsive UI development
+- Docker with Laravel Sail
+- Git workflow
+
+---
+
+#  Future Improvements
+
+- Payment gateway integration
+- Wishlist
+- Order tracking
+- Product reviews
+- Email notifications
+- Inventory management
+
+---
+
+# Author
+
+**Andrew Vasquez**
+
+BSc Information Technology Student
+
+Full-Stack Laravel Developer
+
+🇹🇹 Trinidad & Tobago
+
+GitHub: https://github.com/AndrewDVasquez
+
+---
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is licensed under the MIT License.
