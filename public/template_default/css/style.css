@@ -10979,7 +10979,7 @@ h5,
 
 .hero-wrap {
     width: 100%;
-    height: 700px;
+    height: 300px;
     position: relative;
 }
 .hero-wrap .overlay {
@@ -14490,7 +14490,7 @@ textarea{
 
 }
 
-.auth-card h2{
+.auth-card h3{
 
     font-family:'Playfair Display', serif;
 
@@ -14589,5 +14589,35 @@ textarea{
     border-color:#c79a63;
 
 }
+
+/* Register button styling on Login Page*/
+
+.register-btn{
+
+    border:2px solid #c79a63;
+
+    color:#c79a63;
+
+    border-radius:10px;
+
+    padding:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.register-btn:hover{
+
+    background:#c79a63;
+
+    color:#fff;
+
+    border-color:#c79a63;
+
+}
+
+
 
 

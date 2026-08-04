@@ -25,10 +25,10 @@ hideBanner="true">
 
                 <span class="section-subtitle">Meet the Chef</span>
 
-                <h2>Creating Food That Brings People Together</h2>
+                <h2>Creating Desserts That Bring People Together</h2>
 
                 <p>
-                    Welcome to Chef NV! My passion is creating handcrafted meals,
+                    Welcome to Chef NV! My name is Nathalie Vasquez and my passion is creating handcrafted meals,
                     pastries and desserts that turn everyday moments into lasting
                     memories.
                 </p>
@@ -157,8 +157,6 @@ special occasions.
 
 <li>✔ Elegant Presentation</li>
 
-<li>✔ Personalized Menus</li>
-
 <li>✔ Professional Service</li>
 
 <li>✔ Reliable Delivery</li>
@@ -189,7 +187,7 @@ class="img-fluid rounded shadow">
 <h2>Let's Make Your Next Event Unforgettable</h2>
 
 <p>
-From intimate celebrations to corporate catering,
+From intimate celebrations to small scale catering,
 Chef NV is here to serve you.
 </p>
 
