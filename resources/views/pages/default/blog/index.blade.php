@@ -1,4 +1,4 @@
-<x-mylayouts.layout-default title="Blog"
+<x-mylayouts.layout-default title=""
 bannerImage="template_default/images/banner.jpg">
 
 
