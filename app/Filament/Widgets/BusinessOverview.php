@@ -2,36 +2,53 @@
 
 namespace App\Filament\Widgets;
 
+use App\Models\Order;
 use Filament\Widgets\StatsOverviewWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
 
 
 class BusinessOverview extends StatsOverviewWidget
 {
+
     protected function getStats(): array
-    {
-        return [
-            Stat::make('Revenue Today', '$1,250')
-                ->description('12% increase')
-                ->descriptionIcon('heroicon-m-arrow-trending-up')
-                ->color('success'),
+{
+    $revenue = Order::where('payment_status', 'paid')
+        ->whereBetween('created_at', [
+            now()->startOfWeek(),
+            now()->endOfWeek(),
+        ])
+        ->sum('total');
 
-            Stat::make('Orders Today', '18')
-                ->description('3 awaiting preparation')
-                ->descriptionIcon('heroicon-m-shopping-bag')
-                ->color('warning'),
+    $orders = Order::whereBetween('created_at', [
+        now()->startOfWeek(),
+        now()->endOfWeek(),
+    ])->count();
 
-            Stat::make('Customers', '4')
-                ->description('New today')
-                ->descriptionIcon('heroicon-m-user-plus')
-                ->color('info'),
 
-            Stat::make('Products', '56')
-                ->description('8 featured')
-                ->descriptionIcon('heroicon-m-cake')
-                ->color('primary'),
-        ];
-    }
+
+
+    return [
+
+        Stat::make(
+            'Revenue This Week',
+            'TT$ ' . number_format($revenue, 2)
+        )
+            ->description('Paid orders this week')
+            ->descriptionIcon('heroicon-o-banknotes')
+            ->color('success'),
+
+        Stat::make(
+            'Orders This Week',
+            $orders
+        )
+            ->description('Orders placed this week')
+            ->descriptionIcon('heroicon-o-shopping-bag')
+            ->color('warning'),
+
+
+
+    ];
+}
 }
 
 

@@ -3,14 +3,25 @@
 namespace App\Models;
 
 use App\Models\OrderProduct;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Order extends Model
 {
     use HasFactory;
+
+    /**
+     * The customer who placed the order.
+     */
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
+
+
 
 
     /**
@@ -26,6 +37,9 @@ class Order extends Model
     }
 
 
+/**
+ * The order items.
+ */
     public function order_products(): HasMany
     {
         return $this->hasMany(OrderProduct::class, 'order_id');
