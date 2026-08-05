@@ -155,7 +155,7 @@ http://localhost
 
 ---
 
-# 🎯 Learning Objectives
+#  Learning Objectives
 
 This project allowed me to gain practical experience with:
 
