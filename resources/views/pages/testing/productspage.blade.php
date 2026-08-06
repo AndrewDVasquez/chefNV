@@ -1,4 +1,4 @@
-<x-mylayouts.layout-default>
+<x-mylayouts.layout-default title="">
 
 
     <h1>Store Page</h1>
