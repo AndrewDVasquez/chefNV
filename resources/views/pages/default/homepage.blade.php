@@ -252,7 +252,7 @@
                         <p>But nothing the copy said could convince her and so it didn’t take long until a few insidious
                             Copy
                             Writers ambushed her.</p>
-                        <p><a href="#" class="btn btn-primary">About Me</a></p>
+                        <p><a href="{{ route("about") }}" class="btn btn-primary">About Me</a></p>
                     </div>
                 </div>
             </div>

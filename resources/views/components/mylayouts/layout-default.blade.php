@@ -188,7 +188,8 @@
                         <h2 class="ftco-heading-2">{{ $store }}</h2>
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                            <li class="ftco-animate"><a href="{{ config('socials.instagram') }}" target="blank" rel="noopener noreferrer"><span class="icon-instagram"></span></a></li>
+                            <li class="ftco-animate"><a href="{{ config('socials.facebook') }}" target="blank" rel="noopener noreferrer"><span class="icon-facebook"></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -223,8 +224,8 @@
                         <div class="block-23 mb-3">
                             <ul>
                                 <li><span class="icon icon-map-marker"></span><span class="text">Savary Street, St Joseph</span></li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+1868-768-0451</span></a></li>
-                                <li><a href="#"><span class="icon icon-envelope"></span><span
+                                <li><a href="https://wa.me/18687680451?text=Hi%20Chef%20NV,%20I'd%20like%20to%20place%20an%20order"><span class="icon icon-phone"></span><span class="text">+1868-768-0451</span></a></li>
+                                <li><a href="mailto:{{ config('socials.email') }}" rel="noopener noreferrer"><span class="icon icon-envelope"></span><span
                                             class="text">chefnvirayie@gmail.com</span></a></li>
                             </ul>
                         </div>
