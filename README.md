@@ -2,7 +2,7 @@
 
 # 🍽️ Chef NV Laravel Website
 
-**A modern e-commerce website built with Laravel for a home-based food business.**
+**A modern e-commerce website built with Laravel for a home-based food business. Developed as a portfolio/academic project.**
 
 Designed to simplify online ordering, showcase products, and streamline business operations.
 
