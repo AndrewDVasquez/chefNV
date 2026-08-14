@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🍽️ Chef NV Website
+# 🍽️ Chef NV Laravel Website
 
 **A modern e-commerce website built with Laravel for a home-based food business.**
 
