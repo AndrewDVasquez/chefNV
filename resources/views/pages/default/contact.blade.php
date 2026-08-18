@@ -52,7 +52,8 @@ Feel free to contact us using any of the methods below.
 <i class="fas fa-envelope"></i>
 <div>
 <h5>Email</h5>
-<p>chefnvirayie@gmail.com</p>
+<a href="mailto:{{ config('socials.email') }}" rel="noopener noreferrer"></span><span
+                                            class="text">chefnvirayie@gmail.com</span></a>
 </div>
 </div>
 
